@@ -5,19 +5,19 @@ import { Wrapper, Header, Content } from './styles'
 
 /** Primary UI component for displaying preview data */
 const Card = ({ data }) => {
-	console.log("test", data)
+  console.log(data)
 
-	return (
-		<Wrapper aria-label="Card">
-			<Header>Card header</Header>
-			<Content>Card content</Content>
-		</Wrapper>
-	)
+  return (
+    <Wrapper aria-label='Card'>
+      <Header>Card header</Header>
+      <Content>Card content</Content>
+    </Wrapper>
+  )
 }
 
 Card.propTypes = {
-	/** Main data object for this card */
-	data: PropTypes.object.isRequired,
+  /** Main data object for this card */
+  data: PropTypes.object.isRequired,
 }
 
 export default Card
