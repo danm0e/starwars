@@ -8,8 +8,6 @@ const baseProps = {
   data: { id: 'Some test id' },
 }
 
-const test = 'this is a test'
-
 describe('Card', () => {
   describe('When the button is rendered', () => {
     it('should render the card correctly', () => {

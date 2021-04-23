@@ -6,9 +6,12 @@ export default {
   component: Button,
 }
 
-const Template = (args) => <Button {...args} />
+const Template = (args) => {
+  return <Button {...args}>{args.children}</Button>
+}
 
 export const Default = Template.bind({})
-// Default.args = {
-// 	data: { id: 'This is a test' },
-// };
+Default.args = {
+  onClick: () => console.log('hit'),
+  children: 'Label',
+}
