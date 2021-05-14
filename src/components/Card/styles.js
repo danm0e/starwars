@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import { palette } from '../../assets/styles/colors'
 
-const backgroundColor = '#333333'
-const titleColor = '#ffdf02'
-const borderColor = '#767676'
+const backgroundColor = palette.grey.light
+const titleColor = palette.primary
+const borderColor = palette.grey.dark
 
 export const Wrapper = styled.div`
   background: ${backgroundColor};
