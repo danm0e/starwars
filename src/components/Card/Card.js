@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Wrapper, Header, Content } from './styles'
+import { Wrapper, Header, Content, Title } from './styles'
 
 /** Primary UI component for displaying preview data */
 const Card = ({ data }) => {
@@ -9,8 +9,10 @@ const Card = ({ data }) => {
 
   return (
     <Wrapper aria-label='Card'>
-      <Header>Card header</Header>
-      <Content>Card content</Content>
+      <Header src='https://via.placeholder.com/300x200' alt='' />
+      <Content>
+        <Title>Luke SkyWalker</Title>
+      </Content>
     </Wrapper>
   )
 }
