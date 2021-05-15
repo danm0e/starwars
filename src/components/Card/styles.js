@@ -1,9 +1,12 @@
 import styled from 'styled-components'
 import { palette } from '../../assets/styles/colors'
+import { theme } from '../../assets/styles/theme'
 
 const backgroundColor = palette.grey.light
 const titleColor = palette.primary
 const borderColor = palette.grey.dark
+
+const fontFamily = theme.fontFamily
 
 export const Wrapper = styled.div`
   background: ${backgroundColor};
@@ -32,7 +35,7 @@ export const Content = styled.div`
 
 export const Title = styled.h2`
   color: ${titleColor};
-  font-family: 'Roboto Slab';
+  font-family: ${fontFamily};
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
